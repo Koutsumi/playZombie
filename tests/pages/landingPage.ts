@@ -1,7 +1,7 @@
-import { expect } from "@playwright/test";
+import { expect, Page } from "@playwright/test";
 
 export class LandingPage{
-    page: any;
+    page: Page;
     constructor(page){
         this.page = page
     }
@@ -27,16 +27,5 @@ export class LandingPage{
 
     async alertHaveText(text){
         await expect(this.page.locator('span.alert')).toHaveText(text)
-    }
-
-    async toastHaveText(text){
-        const toast = this.page.locator('div.toast')
-        await expect(toast).toHaveText(text);
-        await expect(toast).toBeHidden({timeout: 5000});
-        
-        // * Para conseguir pegar um elemento que some da tela
-        // await page.getByText('seus dados conosco').click();
-        // const content = await page.content();
-        // console.log(content)
     }
 }
