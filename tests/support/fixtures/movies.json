@@ -1,82 +1,82 @@
 {
-    "a_noite_dos_mortos_vivos": {
-        "title": "A Noite dos Mortos-Vivos",
-        "overview": "Um grupo de pessoas se esconde de zumbis sedentos de sangue em uma casa de fazenda.",
-        "company": "Image Ten",
-        "release_year": 1968,
-        "featured": false,
-        "cover": "/images/a_noite_dos_mortos_vivos.jpg"
+    "guerra_mundial_z": {
+      "title": "Guerra Mundial Z",
+      "overview": "Um ex-investigador da ONU é chamado para investigar a propagação de um vírus mortal que transforma as vítimas em zumbis, ameaçando dizimar a população mundial.",
+      "company": "Paramount Pictures",
+      "release_year": 2013,
+      "featured": true,
+      "cover": "/caminho/para/guerra_mundial_z.png"
     },
-    "o_despertar_dos_mortos": {
-        "title": "O Despertar dos Mortos",
-        "overview": "Após uma epidemia crescente de zumbis que se levantaram dos mortos, dois membros da equipe SWAT da Filadélfia, um repórter de trânsito e sua namorada executiva de televisão procuram refúgio em um shopping isolado.",
-        "company": "Laurel Group",
-        "release_year": 1978,
-        "featured": false,
-        "cover": "/images/o_despertar_dos_mortos.jpg"
+    "resident_evil_o_hospedeiro": {
+      "title": "Resident Evil: O Hospedeiro",
+      "overview": "Alice se junta a sobreviventes para enfrentar a Corporação Umbrella e os zumbis mutantes criados por ela.",
+      "company": "Screen Gems",
+      "release_year": 2002,
+      "featured": false,
+      "cover": "/caminho/para/resident_evil_o_hospedeiro.png"
+    },
+    "a_noite_dos_mortos_vivos": {
+      "title": "A Noite dos Mortos-Vivos",
+      "overview": "Um grupo de pessoas fica preso em uma casa enquanto zumbis canibais famintos cercam o local.",
+      "company": "Continental Distributing",
+      "release_year": 1968,
+      "featured": false,
+      "cover": "/caminho/para/a_noite_dos_mortos_vivos.png"
     },
     "exterminio": {
-        "title": "Extermínio",
-        "overview": "Quatro semanas após um vírus misterioso e incurável se espalhar pelo Reino Unido, um punhado de sobreviventes tenta encontrar um santuário.",
-        "company": "Fox Searchlight Pictures",
-        "release_year": 2002,
-        "featured": false,
-        "cover": "/images/exterminio.jpg"
+      "title": "Extermínio",
+      "overview": "Um vírus transforma as pessoas em raivosos assassinos. Um grupo tenta sobreviver na desolada Londres.",
+      "company": "Fox Searchlight Pictures",
+      "release_year": 2002,
+      "featured": true,
+      "cover": "/caminho/para/exterminio.png"
     },
-    "todo_mundo_quase_morto": {
-        "title": "Todo Mundo Quase Morto",
-        "overview": "A vida sem graça de um homem é interrompida pelo apocalipse zumbi.",
-        "company": "Universal Pictures",
-        "release_year": 2004,
-        "featured": false,
-        "cover": "/images/todo_mundo_quase_morto.jpg"
+    "madrugada_dos_mortos": {
+      "title": "Madrugada dos Mortos",
+      "overview": "Um grupo de sobreviventes busca abrigo em um shopping enquanto uma horda de zumbis toma conta da cidade.",
+      "company": "Universal Pictures",
+      "release_year": 2004,
+      "featured": false,
+      "cover": "/caminho/para/madrugada_dos_mortos.png"
     },
     "zumbilandia": {
-        "title": "Zumbilândia",
-        "overview": "Um estudante tímido tentando chegar à sua família em Ohio, um cara durão armado tentando encontrar o último Twinkie e duas irmãs tentando chegar a um parque de diversões se unem para viajar pela América infestada de zumbis.",
-        "company": "Columbia Pictures",
-        "release_year": 2009,
-        "featured": false,
-        "cover": "/images/zumbilandia.jpg"
+      "title": "Zumbilândia",
+      "overview": "Um grupo improvável de sobreviventes navega por um mundo cheio de zumbis, tentando encontrar um lugar seguro.",
+      "company": "Sony Pictures",
+      "release_year": 2009,
+      "featured": true,
+      "cover": "/caminho/para/zumbilandia.png"
     },
-    "guerra_mundial_z": {
-        "title": "Guerra Mundial Z",
-        "overview": "O ex-funcionário das Nações Unidas, Gerry Lane, atravessa o mundo em uma corrida contra o tempo para deter a pandemia zumbi que está derrubando exércitos e governos e ameaçando destruir a humanidade.",
-        "company": "Paramount Pictures",
-        "release_year": 2013,
-        "featured": false,
-        "cover": "/images/guerra_mundial_z.jpg"
+    "orgulho_e_preconceito_e_zumbis": {
+      "title": "Orgulho e Preconceito e Zumbis",
+      "overview": "Elizabeth Bennet e Sr. Darcy unem forças para combater uma praga de zumbis que assola a Inglaterra.",
+      "company": "Screen Gems",
+      "release_year": 2016,
+      "featured": false,
+      "cover": "/caminho/para/orgulho_e_preconceito_e_zumbis.png"
     },
-    "invasao_zumbi": {
-        "title": "Invasão Zumbi",
-        "overview": "Enquanto um vírus zumbi irrompe na Coreia do Sul, os passageiros lutam para sobreviver no trem de Seul para Busan.",
-        "company": "Next Entertainment World",
-        "release_year": 2016,
-        "featured": false,
-        "cover": "/images/invasao_zumbi.jpg"
+    "meu_namorado_e_um_zumbi": {
+      "title": "Meu Namorado é um Zumbi",
+      "overview": "Em um mundo pós-apocalíptico, uma jovem se apaixona por um zumbi que ainda preserva algumas características humanas.",
+      "company": "Summit Entertainment",
+      "release_year": 2013,
+      "featured": false,
+      "cover": "/caminho/para/meu_namorado_e_um_zumbi.png"
     },
-    "resident_evil_o_hospede_maldito": {
-        "title": "Resident Evil: O Hóspede Maldito",
-        "overview": "Uma unidade militar especial luta contra um supercomputador poderoso e fora de controle e centenas de cientistas que se transformaram em criaturas devoradoras de carne após um acidente de laboratório.",
-        "company": "Screen Gems",
-        "release_year": 2002,
-        "featured": false,
-        "cover": "/images/resident_evil.jpg"
+    "dead_snow": {
+      "title": "Dead Snow",
+      "overview": "Um grupo de amigos enfrenta zumbis nazistas que ressurgem para aterrorizar uma vila remota.",
+      "company": "IFC Films",
+      "release_year": 2009,
+      "featured": true,
+      "cover": "/caminho/para/dead_snow.png"
     },
-    "the_walking_dead": {
-        "title": "The Walking Dead",
-        "overview": "O deputado do xerife Rick Grimes acorda de um coma para descobrir que o mundo está em ruínas e deve liderar um grupo de sobreviventes para permanecer vivo.",
-        "company": "AMC",
-        "release_year": 2010,
-        "featured": false,
-        "cover": "/images/the_walking_dead.jpg"
-    },
-    "army_of_the_dead_invasao_em_las_vegas": {
-        "title": "Army of the Dead: Invasão em Las Vegas",
-        "overview": "Após um surto de zumbis em Las Vegas, um grupo de mercenários faz a maior aposta, entrando na zona de quarentena para realizar o maior assalto já tentado.",
-        "company": "Netflix",
-        "release_year": 2021,
-        "featured": false,
-        "cover": "/images/army_of_the_dead.jpg"
+    "a_volta_dos_mortos_vivos": {
+      "title": "A Volta dos Mortos Vivos",
+      "overview": "Um gás tóxico transforma os mortos em zumbis famintos. Um grupo luta para sobreviver em uma cidade sitiada.",
+      "company": "Orion Pictures",
+      "release_year": 1985,
+      "featured": false,
+      "cover": "/caminho/para/a_volta_dos_mortos_vivos.png"
     }
-}
+  }
