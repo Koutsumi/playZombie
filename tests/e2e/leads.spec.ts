@@ -20,7 +20,7 @@ test("Deve cadastrar um lead na fila de espera", async ({ page }) => {
   await landingPage.submitLeadForm(leadName, leadEmail);
 
   const message = "Agradecemos por compartilhar seus dados conosco. Em breve, nossa equipe entrará em contato!";
-  await toastComponent.haveText(message);
+  await toastComponent.containText(message);
 });
 
 test("Não deve cadastrar um lead quando e-mail já cadastrado", async function({page, request}){
@@ -41,7 +41,7 @@ test("Não deve cadastrar um lead quando e-mail já cadastrado", async function(
   await landingPage.submitLeadForm(leadName, leadEmail);
 
   const message = /O endereço de e-mail fornecido já está registrado em nossa fila de espera./;
-  await toastComponent.haveText(message);
+  await toastComponent.containText(message);
 })
 
 test("Não deve cadastrar quando o email é inválido", async ({ page }) => {

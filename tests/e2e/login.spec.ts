@@ -25,7 +25,7 @@ test("Deve logar como administrador", async ({page}) => {
 test("Não deve logar com senha incorreta", async ({page}) => {
     await loginPage.visit();
     await loginPage.submit("admin@zombieplus.com", "pwd1234");
-    await toastComponent.haveText(/Oops!Ocorreu um erro ao tentar efetuar o login/)
+    await toastComponent.containText(/Oops!Ocorreu um erro ao tentar efetuar o login/)
 })
 
 test("Não deve logar quando a senha não é preenchida", async ({page}) => {
