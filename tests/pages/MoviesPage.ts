@@ -28,5 +28,7 @@ export class MoviesPage{
             .filter({hasText:data.release_year})
                 .click();
         //console.log(await this.page.content())
+
+        await this.page.getByRole('button', {name: 'Cadastrar'}).click();
     }
 }
