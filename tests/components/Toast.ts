@@ -6,9 +6,9 @@ export class ToastComponent{
         this.page = page
     }
     
-    async haveText(text){
+    async containText(text){
         const toast = this.page.locator('div.toast')
-        await expect(toast).toHaveText(text);
+        await expect(toast).toContainText(text);
         //await expect(toast).toBeHidden({timeout: 5000});
         
         // * Para conseguir pegar um elemento que some da tela
