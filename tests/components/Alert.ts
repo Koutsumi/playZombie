@@ -7,7 +7,7 @@ export class AlertComponent{
     }
     
     async haveText(text){
-        const toast = this.page.locator('span[class$="-alert"]')
+        const toast = this.page.locator('span[class$="alert"]')
         await expect(toast).toHaveText(text);
     }
 }

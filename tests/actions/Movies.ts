@@ -1,18 +1,21 @@
 import { expect, Page } from "@playwright/test";
 
-export class MoviesPage{
+export class Movies{
     page: Page;
     constructor(page){
         this.page = page
     }
 
-    async isLoggedIn(){
-        await this.page.waitForLoadState('networkidle');
-        await expect(this.page).toHaveURL(/.*admin/)
+    async goForm(){
+        await this.page.locator('a[href$="/movies/register"]').click();
+    }
+
+    async submit(){
+        await this.page.getByRole('button', {name: 'Cadastrar'}).click();
     }
 
     async create(data){
-        await this.page.locator('a[href$="/movies/register"]').click();
+        await this.goForm()
         await this.page.getByLabel(/Titulo do filme/).fill(data.title);
         await this.page.getByLabel('Sinopse').fill(data.overview);
 
@@ -29,6 +32,7 @@ export class MoviesPage{
                 .click();
         //console.log(await this.page.content())
 
-        await this.page.getByRole('button', {name: 'Cadastrar'}).click();
+        await this.submit();
+       
     }
 }
