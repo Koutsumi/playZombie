@@ -1,7 +1,7 @@
 import { test as base, expect, Page } from "@playwright/test";
-import { Login } from "../actions/Login";
-import { Leads } from "../actions/Leads";
-import { Movies } from "../actions/Movies";
+import { Login } from "./actions/Login";
+import { Leads } from "./actions/Leads";
+import { Movies } from "./actions/Movies";
 import { ToastComponent } from "../components/Toast";
 import { AlertComponent } from "../components/Alert";
 

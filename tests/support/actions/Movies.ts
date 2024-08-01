@@ -30,7 +30,15 @@ export class Movies{
         await this.page.locator('.react-select__option')
             .filter({hasText:data.release_year})
                 .click();
+
+        await this.page.locator('input[name="cover"]')
+            .setInputFiles(`tests/support/fixtures/${data.cover}`)
         //console.log(await this.page.content())
+
+        if(data.feature){
+            await this.page.locator('label.feature .dev.react-switch')
+                .click()
+        }
 
         await this.submit();
        
