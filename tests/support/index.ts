@@ -1,7 +1,8 @@
-import { test as base, expect, Page } from "@playwright/test";
+import { test as base, expect, Page, Request } from "@playwright/test";
 import { Login } from "./actions/Login";
 import { Leads } from "./actions/Leads";
 import { Movies } from "./actions/Movies";
+import { Api } from "./api";
 import { ToastComponent } from "../components/Toast";
 import { AlertComponent } from "../components/Alert";
 
@@ -11,9 +12,14 @@ interface CustomPage extends Page {
     movies: Movies;
     toast: ToastComponent;
     alert: AlertComponent;
+
 }
 
-const test = base.extend<{page: CustomPage}>({
+interface CustomRequest extends Request{
+    api: Api;
+}
+
+const test = base.extend<{page: CustomPage, request: CustomRequest}>({
     page: async ({page}, use) => {
         const context = page
         context['landing'] = new Leads(page);
@@ -22,6 +28,12 @@ const test = base.extend<{page: CustomPage}>({
         context['toast'] = new ToastComponent(page);
         context['alert'] = new AlertComponent(page);
 
+        await use(context);
+    },
+    request: async ({request}, use) => {
+        const context = request
+        context['api'] = new Api(request);
+        context['api'].setToken();
         await use(context);
     }
 });
