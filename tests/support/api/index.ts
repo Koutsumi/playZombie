@@ -37,6 +37,7 @@ export class Api{
     }
 
     async postMovie(data){
+        await this.setToken();
         const company_id = await this.getCompanyByName(data.company)
 
         const response = await this.request.post('http://localhost:3333/movies',{

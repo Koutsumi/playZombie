@@ -1,13 +1,13 @@
 import { expect, Page } from "@playwright/test";
 
-export class ToastComponent{
+export class PopupComponent{
     page: Page;
     constructor(page){
         this.page = page
     }
     
-    async containText(text){
-        const toast = this.page.locator('div.toast')
+    async haveText(text){
+        const toast = this.page.locator('div.swal2-html-container')
         await expect(toast).toContainText(text);
         //await expect(toast).toBeHidden({timeout: 5000});
         

@@ -26,7 +26,7 @@ export class Login{
 
     async isLoggedIn(username){
         await this.page.waitForLoadState('networkidle');
-        const loggedUser = this.page.locator('.logged-user');
+        const loggedUser = await this.page.locator('.logged-user');
         await expect(loggedUser).toHaveText(`Olá, ${username}`)
         await expect(this.page).toHaveURL(/.*admin/);
     }

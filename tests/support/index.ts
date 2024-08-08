@@ -3,14 +3,14 @@ import { Login } from "./actions/Login";
 import { Leads } from "./actions/Leads";
 import { Movies } from "./actions/Movies";
 import { Api } from "./api";
-import { ToastComponent } from "../components/Toast";
+import { PopupComponent } from "../components/Popup";
 import { AlertComponent } from "../components/Alert";
 
 interface CustomPage extends Page {
     login: Login;
     landing: Leads;
     movies: Movies;
-    toast: ToastComponent;
+    popup: PopupComponent;
     alert: AlertComponent;
 
 }
@@ -25,7 +25,7 @@ const test = base.extend<{page: CustomPage, request: CustomRequest}>({
         context['landing'] = new Leads(page);
         context['login'] = new Login(page);
         context['movies'] = new Movies(page);
-        context['toast'] = new ToastComponent(page);
+        context['popup'] = new PopupComponent(page);
         context['alert'] = new AlertComponent(page);
 
         await use(context);
@@ -33,7 +33,6 @@ const test = base.extend<{page: CustomPage, request: CustomRequest}>({
     request: async ({request}, use) => {
         const context = request
         context['api'] = new Api(request);
-        context['api'].setToken();
         await use(context);
     }
 });
