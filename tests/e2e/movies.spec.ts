@@ -1,4 +1,4 @@
-import { test } from "../support";
+import { expect, test } from "../support";
 import dataMovies from "../support/fixtures/movies.json";
 import { executeSQL } from "../support/database";
 import { describe } from "node:test";
@@ -7,16 +7,22 @@ describe("Cadastro de filmes", async function(){
         await executeSQL(`DELETE from movies`)
     })
     
-    test.beforeEach(async ({page}) => {
-        await page.login.do("Admin","admin@zombieplus.com", "pwd123");
-    })
-    
     test("Deve poder cadastar um novo filme", async function({page}){
+        await page.login.do("Admin","admin@zombieplus.com", "pwd123");
         await page.movies.create(dataMovies.create);
         await page.popup.haveText(`O filme '${dataMovies.create.title}' foi adicionado ao catálogo.`);
     });
 
+    test("Deve poder remover um filme", async function({page, request}){
+        const movie = dataMovies.to_remove;
+        await request.api.postMovie(movie);
+        await page.login.do("Admin","admin@zombieplus.com", "pwd123");
+        await page.movies.remove(movie);
+        await page.popup.haveText(/Filme removido com sucesso./);
+    });
+
     test("Não deve cadastar quando o título é duplicado", async function({page, request}){
+        await page.login.do("Admin","admin@zombieplus.com", "pwd123");
         const movie = dataMovies.duplicate
         await request.api.postMovie(movie);
         await page.movies.create(movie);
@@ -24,6 +30,7 @@ describe("Cadastro de filmes", async function(){
     });
     
     test("Não deve cadastrar quando os campos obrigatórios não são prrenchidos", async function({page}){
+        await page.login.do("Admin","admin@zombieplus.com", "pwd123");
         await page.movies.goForm();
         await page.movies.submit();
         await page.alert.haveText([
@@ -32,5 +39,19 @@ describe("Cadastro de filmes", async function(){
             /Campo obrigatório/,
             /Campo obrigatório/
         ])
-    })
+    });
+
+    test("Deve realizar busca pelo termo zumbi", async function({page, request}){
+        const movies = dataMovies.search;
+
+        movies.data.forEach(async movie => {
+            await request.api.postMovie(movie);
+        });
+
+        await page.login.do("Admin","admin@zombieplus.com", "pwd123");
+        await page.movies.search(movies.input);
+
+        const rows = await page.getByRole('row');
+        await expect(rows).toContainText(movies.output);
+    });
 })

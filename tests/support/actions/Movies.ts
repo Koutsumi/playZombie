@@ -14,6 +14,21 @@ export class Movies{
         await this.page.getByRole('button', {name: 'Cadastrar'}).click();
     }
 
+    async search(target){
+        await this.page.getByPlaceholder('Busque pelo nome')
+            .fill(target);
+
+        await this.page.locator('.actions button')
+                .click();    
+    }
+
+    async remove(movie){
+        // xpath = //td[text()="${movie}"]/..//button
+        await this.page.getByRole('row', {name: movie.title})
+            .getByRole('button').click();
+        await this.page.click('.confirm-removal');
+    }
+
     async create(data){
         await this.goForm()
         await this.page.getByLabel(/Titulo do filme/).fill(data.title);

@@ -17,14 +17,51 @@
       "featured": false,
       "cover": "/covers/movies/resident-evil.jpg"
     },
-    "a_noite_dos_mortos_vivos": {
+    "to_remove": {
       "title": "A Noite dos Mortos-Vivos",
       "overview": "Um grupo de pessoas fica preso em uma casa enquanto zumbis canibais famintos cercam o local.",
       "company": "Amazon Studios",
       "company_id": "c56f9c39-470d-4e33-8ecd-49d37205f671",
       "release_year": 1968,
       "featured": false,
-      "cover": "/covers/movies/a_noite_dos_mortos_vivos.png"
+      "cover": "/covers/movies/mortos_vivos.jpg"
+    },
+    "search": {
+      "input": "zumbi",
+      "output": [
+        "ZumbilândiaUm",
+        "Orgulho e Preconceito e ZumbisElizabeth",
+        "Meu Namorado é um ZumbiEm"
+      ],
+      "data": [
+        {
+          "title": "Zumbilândia",
+          "overview": "Um grupo improvável de sobreviventes navega por um mundo cheio de zumbis, tentando encontrar um lugar seguro.",
+          "company": "Sony Pictures",
+          "company_id": "e1368c35-07d7-40c8-b72d-0fbec6c93a20",
+          "release_year": 2009,
+          "featured": true,
+          "cover": "/covers/movies/zumbilandia.png"
+        },
+        {
+          "title": "Orgulho e Preconceito e Zumbis",
+          "overview": "Elizabeth Bennet e Sr. Darcy unem forças para combater uma praga de zumbis que assola a Inglaterra.",
+          "company": "Lionsgate Films",
+          "company_id": "239adc64-2ea5-41a7-853c-c6bd6e7f072c",
+          "release_year": 2016,
+          "featured": false,
+          "cover": "/covers/movies/orgulho_e_preconceito_e_zumbis.png"
+        },
+        {
+          "title": "Meu Namorado é um Zumbi",
+          "overview": "Em um mundo pós-apocalíptico, uma jovem se apaixona por um zumbi que ainda preserva algumas características humanas.",
+          "company": "Netflix",
+          "company_id": "3e1ce8e0-a7ab-4ac0-99a0-3f8c7da77657",
+          "release_year": 2013,
+          "featured": false,
+          "cover": "/covers/movies/meu_namorado_e_um_zumbi.png"
+        }
+      ]
     },
     "exterminio": {
       "title": "Extermínio",
@@ -43,33 +80,6 @@
       "release_year": 2004,
       "featured": false,
       "cover": "/covers/movies/madrugada_dos_mortos.png"
-    },
-    "zumbilandia": {
-      "title": "Zumbilândia",
-      "overview": "Um grupo improvável de sobreviventes navega por um mundo cheio de zumbis, tentando encontrar um lugar seguro.",
-      "company": "Sony Pictures",
-      "company_id": "e1368c35-07d7-40c8-b72d-0fbec6c93a20",
-      "release_year": 2009,
-      "featured": true,
-      "cover": "/covers/movies/zumbilandia.png"
-    },
-    "orgulho_e_preconceito_e_zumbis": {
-      "title": "Orgulho e Preconceito e Zumbis",
-      "overview": "Elizabeth Bennet e Sr. Darcy unem forças para combater uma praga de zumbis que assola a Inglaterra.",
-      "company": "Lionsgate Films",
-      "company_id": "239adc64-2ea5-41a7-853c-c6bd6e7f072c",
-      "release_year": 2016,
-      "featured": false,
-      "cover": "/covers/movies/orgulho_e_preconceito_e_zumbis.png"
-    },
-    "meu_namorado_e_um_zumbi": {
-      "title": "Meu Namorado é um Zumbi",
-      "overview": "Em um mundo pós-apocalíptico, uma jovem se apaixona por um zumbi que ainda preserva algumas características humanas.",
-      "company": "Netflix",
-      "company_id": "3e1ce8e0-a7ab-4ac0-99a0-3f8c7da77657",
-      "release_year": 2013,
-      "featured": false,
-      "cover": "/covers/movies/meu_namorado_e_um_zumbi.png"
     },
     "dead_snow": {
       "title": "Dead Snow",
