@@ -1,0 +1,82 @@
+{
+    "create": {
+        "title": "Santa Clarita Diet",
+        "overview": "A vida de uma família suburbana vira de cabeça para baixo quando a mãe se transforma em zumbi e começa a desejar carne humana.",
+        "company": "Lionsgate Films",
+        "company_id": "239adc64-2ea5-41a7-853c-c6bd6e7f072c",
+        "release_year": 2017,
+        "featured": false,
+        "cover": "/covers/tvshows/Santa_Clarita_Diet_Cover.png",
+        "seasons": "3"
+    },
+    "duplicate": {
+        "title": "Resident Evil: No Escuro Absoluto",
+        "overview": "Leon S. Kennedy e Claire Redfield se unem para investigar um surto de zumbis que ameaça o mundo.",
+        "company": "Paramount Pictures",
+        "company_id": "22b6daa7-e925-4a81-af10-890109cafdb1",
+        "release_year": 2021,
+        "featured": false,
+        "cover": "/covers/tvshows/Resident_Evil_Cover.png",
+        "seasons": "1"
+    },
+    "to_remove": {
+        "title": "Z Nation",
+        "overview": "Três anos após o vírus zumbi devastar os EUA, um grupo de heróis inesperados deve transportar o único sobrevivente conhecido da praga para um laboratório.",
+        "company": "Amazon Studios",
+        "company_id": "c56f9c39-470d-4e33-8ecd-49d37205f671",
+        "release_year": 2014,
+        "featured": false,
+        "cover": "/covers/tvshows/Z_Nation_Cover.png",
+        "seasons": "5"
+    },
+    "search": {
+        "input": "dead",
+        "output": [
+            "The Walking Dead11",
+            "Dead Set1",
+            "Fear the Walking Dead8"
+        ],
+        "data": [
+            {
+                "title": "The Walking Dead",
+                "overview": "Um grupo de sobreviventes luta para sobreviver em um mundo devastado por zumbis enquanto enfrentam desafios tanto de mortos quanto de vivos.",
+                "company": "Paramount Pictures",
+                "company_id": "0605bdd0-7c6e-4424-b062-f1f25e7db033",
+                "release_year": 2010,
+                "featured": true,
+                "cover": "/covers/tvshows/The_Walking_Dead_Cover.png",
+                "seasons": "11"
+            },
+            {
+                "title": "Dead Set",
+                "overview": "Os participantes de um reality show britânico descobrem que o mundo fora da casa está tomado por zumbis.",
+                "company": "Netflix",
+                "company_id": "3e1ce8e0-a7ab-4ac0-99a0-3f8c7da77657",
+                "release_year": 2008,
+                "featured": true,
+                "cover": "/covers/tvshows/Dead_Set_Cover.png",
+                "seasons": "1"
+            },
+            {
+                "title": "Fear the Walking Dead",
+                "overview": "A série acompanha o início do apocalipse zumbi através dos olhos de uma família desfuncional.",
+                "company": "Universal Pictures",
+                "company_id": "b904fecb-0313-4d7c-af33-afacbe0e824b",
+                "release_year": 2015,
+                "featured": false,
+                "cover": "/covers/tvshows/Fear_the_Walking_Dead_Cover.png",
+                "seasons": "8"
+            }
+        ]
+    },
+    "daybreak": {
+        "title": "Daybreak",
+        "overview": "Um grupo de adolescentes tenta sobreviver em um mundo pós-apocalíptico cheio de zumbis e gangues.",
+        "company": "Fox Entertainment",
+        "company_id": "3e1e0dba-35e2-4423-9b7a-c6c4e82c7ed1",
+        "release_year": 2019,
+        "featured": true,
+        "cover": "/covers/tvshows/Daybreak.png",
+        "seasons": "1"
+    }
+}

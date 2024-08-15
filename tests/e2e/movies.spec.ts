@@ -49,9 +49,6 @@ describe("Cadastro de filmes", async function(){
         });
 
         await page.login.do("Admin","admin@zombieplus.com", "pwd123");
-        await page.movies.search(movies.input);
-
-        const rows = await page.getByRole('row');
-        await expect(rows).toContainText(movies.output);
+        await page.movies.search(movies.input, movies.output);
     });
 })

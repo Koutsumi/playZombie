@@ -1,13 +1,19 @@
 import { expect, Page } from "@playwright/test";
 
-export class Movies{
+export class Tvshows{
     page: Page;
     constructor(page){
         this.page = page
     }
 
+    async visit(){
+        await this.page.locator('a[href="/admin/tvshows"]').click();
+        const title = await this.page.getByRole('heading');
+        await expect(title).toHaveText("Séries de TV");
+    }
+
     async goForm(){
-        await this.page.locator('a[href$="/movies/register"]').click();
+        await this.page.locator('a[href$="/tvshows/register"]').click();
     }
 
     async submit(){
@@ -37,8 +43,9 @@ export class Movies{
     }
 
     async create(data){
-        await this.goForm()
-        await this.page.getByLabel(/Titulo do filme/).fill(data.title);
+        await this.visit();
+        await this.goForm();
+        await this.page.getByLabel(/Titulo da série/).fill(data.title);
         await this.page.getByLabel('Sinopse').fill(data.overview);
 
         await this.page.locator('#select_company_id .react-select__indicator')
@@ -52,6 +59,9 @@ export class Movies{
         await this.page.locator('.react-select__option')
             .filter({hasText:data.release_year})
                 .click();
+
+        await this.page.locator('input[name="seasons"]')
+            .fill(data.seasons)
 
         await this.page.locator('input[name="cover"]')
             .setInputFiles(`tests/support/fixtures/${data.cover}`)
