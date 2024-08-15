@@ -1,11 +1,12 @@
+require('dotenv').config();
 import { Pool } from 'pg'
 
 const DbConfig = {
-    user: 'ohrdzfru',
-    host: 'isabelle.db.elephantsql.com',
-    databse: 'ohrdzfru',
-    password: 'q3IMxWcDGls_YxQj1DMed4NpHa0HS2OR',
-    port: 5432
+    user: process.env.DB_USER,
+    host: process.env.DB_HOST,
+    databse: process.env.DB_DATABSE,
+    password: process.env.DB_PASSWORD,
+    port: process.env.DB_PORT
 }
 
 export async function executeSQL(sqlScript){
@@ -14,7 +15,6 @@ export async function executeSQL(sqlScript){
         const client = await pool.connect();
     
         const result = await client.query(sqlScript);
-        console.log(result)
     }catch(error){
         console.log( 'Erro ao executar o sql' + error)
     }

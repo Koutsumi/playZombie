@@ -23,7 +23,7 @@ test("Não deve cadastrar um lead quando e-mail já cadastrado", async function(
   const leadName = faker.person.fullName();
   const leadEmail = faker.internet.email();
 
-  const newLead = await request.post('http://localhost:3333/leads',{
+  const newLead = await request.post(`${process.env.BASE_API}/leads`,{
     data:{
       name: leadName,
       email: leadEmail

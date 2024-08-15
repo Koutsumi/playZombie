@@ -14,7 +14,7 @@ describe("Cadastro de séries", function(){
         await page.popup.haveText(`A série '${dataTvshow.create.title}' foi adicionada ao catálogo.`);
     });
 
-    test("Deve poder remover um filme", async function({page, request}){
+    test("Deve poder remover uma série", async function({page, request}){
         const tvshow = dataTvshow.to_remove;
         await request.api.postTvshow(tvshow);
         await page.login.do("Admin","admin@zombieplus.com", "pwd123");
