@@ -2,7 +2,7 @@ import { expect, Page } from "@playwright/test";
 
 export class Leads{
     page: Page;
-    constructor(page){
+    constructor(page: Page){
         this.page = page
     }
 

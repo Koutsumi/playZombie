@@ -6,9 +6,11 @@ import { Tvshows } from "./actions/Tvshow";
 import { Api } from "./api";
 import { PopupComponent } from "../components/Popup";
 import { AlertComponent } from "../components/Alert";
+import { LogiXp } from "./actions/LoginXp";
 
 interface CustomPage extends Page {
     login: Login;
+    loginXp: LogiXp
     landing: Leads;
     movies: Movies;
     tvshows: Tvshows;
@@ -25,6 +27,7 @@ const test = base.extend<{page: CustomPage, request: CustomRequest}>({
         const context = page
         context['landing'] = new Leads(page);
         context['login'] = new Login(page);
+        context['loginXp'] = new LogiXp(page);
         context['movies'] = new Movies(page);
         context['tvshows'] = new Tvshows(page);
         context['popup'] = new PopupComponent(page);
